@@ -286,7 +286,7 @@ def main():
 
     if choice == 'About':
 
-        image =Image.open('logo_nail.png')
+        image =Image.open('logo.png')
         st.image(image)
 
         #components.html("""""")
