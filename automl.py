@@ -236,7 +236,7 @@ def main():
             df = copy.deepcopy(st.session_state.df)
 
             # 要約統計量の表示
-            st_display_table(df.describe)
+            st_display_table(df.describe())
             
         else:
             st.subheader('訓練用データをアップロードしてください')
@@ -251,7 +251,7 @@ def main():
             df = copy.deepcopy(st.session_state.df)
 
             # グラフの表示
-            st_display_graph(df,)
+            st_display_graph(df,"退職")
             
         else:
             st.subheader('訓練用データをアップロードしてください')
@@ -273,7 +273,7 @@ def main():
 
             # 正解率を出力
             st.caption('決定率の予測')
-            # st.subheader(f"正解率:{}")
+            st.subheader(f"正解率:{train_scores}")
 
             # 決定木のツリーを出力
             st.caption('')#改行
